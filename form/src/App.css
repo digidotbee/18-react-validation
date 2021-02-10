@@ -1,0 +1,25 @@
+.wrapper {
+
+  display: flex;
+  flex-direction: column;
+  padding: 5px 20px;
+  background-color: rgb(70, 69, 63);
+  color: ghostwhite;
+
+}
+
+.wrapper fieldset {
+
+  width: 70%;
+  margin: 20px 0;
+
+}
+
+input {
+
+  width: 85%;
+  height: 35px;
+  background-color: rgb(70, 69, 63);
+  border-color: ghostwhite;
+  border-style: solid 1px;
+}
