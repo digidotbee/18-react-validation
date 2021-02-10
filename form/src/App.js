@@ -5,7 +5,12 @@ import {useState} from 'react';
 
 function App() {
 
-  const [text, setText] = useState('')
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [username, setUser] = useState('')
+  const [password, setPassword] = useState('')
+  const [matchPassword, setMatch] = useState('')
+  const [website, setWebsite] = useState('')
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -18,28 +23,33 @@ function App() {
       <fieldset>
          <label>
            <p>Name</p>
-           <input type="text" onChange={(e) => setText(e.target.value)}
+           <input type="text" name="name" onChange={(e) => setName(e.target.value)}
             />
          </label>
          <label>
            <p>Email</p>
-           <input name="email" />
+           <input type="text" name="email" onChange={(e) => setEmail(e.target.value)}
+            />
          </label>
          <label>
            <p>Username</p>
-           <input name="myusername" />
+           <input type="text" name="myusername" onChange={(e) => setUser(e.target.value)}
+            />
          </label>
          <label>
            <p>Password</p>
-           <input name="password" />
+           <input type="text" name="password" onChange={(e) => setPassword(e.target.value)}
+            />
          </label>
          <label>
            <p>Confirm Password</p>
-           <input name="match" />
+           <input type="text" name="match" onChange={(e) => setMatch(e.target.value)}
+            />
          </label>
          <label>
            <p>Website- Enter Valid URL</p>
-           <input name="website" />
+           <input type="text" name="website" onChange={(e) => setsetWebsite(e.target.value)}
+            />
          </label>
          <button type="submit">Submit</button>
        </fieldset>
